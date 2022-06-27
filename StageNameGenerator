@@ -1,0 +1,94 @@
+ 
+ * Check Readme File for more information
+ */
+ 
+package stagenamecall;
+
+import java.util.Random;
+import java.util.Scanner;
+/**
+ *
+ * @author valen
+ */
+public class stageNameGenerator {
+    
+    public void Snoop() 
+    {
+        
+    Scanner kBoard = new Scanner (System.in);
+
+    System.out.println("How many stage names do you need?");
+    
+     int times = kBoard.nextInt();
+        
+     String[] names = new String[times];
+    
+     
+      for(int i = 0; i<times; i++)
+        {
+                
+            System.out.println("Please enter your name: ");
+            
+            names[i] = kBoard.next()+ " " + kBoard.next();
+            
+          }
+      
+    String[] stageNames = { 
+       
+    "Scorpion", "Kitana", "Lil$", "Raider", "Soulja", "Mileena",
+       
+    "Groot", "Scooby", "Hawkeye", "Captain", "Marvel", "Thor", "Antman", "Storm", "Xavier",
+           
+    "SubZero", "Wolverine", "Thanos", "Iron Man", "Hulk", "Black Widow", "Abyss", 
+    
+    "Ace", "Cyclops", "Professor X", "Pheonix", "Nightcrawler", "Rouge", "Magneto", "Mystique", "Quicksilver" };
+       
+   Random r=new Random();
+   
+   int randomNumber= 0;
+   int randomNumberTwo= 0;
+   String gangstaName = new String();   
+   String lastName = new String();
+   String firstName = new String();
+      
+    System.out.println("Get ready for your new Gangsta name\n" +
+            
+    "..........processing.......\n"+
+            
+    "...checking with Snoop Dogg....\n" +
+            
+    "The Dogg says it's O.K.");
+    
+      
+      for(int i = 0; i<times; i++)
+      {
+     
+      randomNumber = r.nextInt(stageNames.length);
+      randomNumberTwo = r.nextInt(stageNames.length);
+      lastName = names[i].substring(names[i].indexOf(" ")+1);
+      firstName = names[i].substring(0,names[i].indexOf(" "));
+      
+      gangstaName = firstName.substring(0, 1).toUpperCase() + " " 
+    + stageNames[randomNumber] + " " 
+    + lastName.toUpperCase()+ " " 
+    + firstName.toLowerCase()+ " " 
+    + stageNames[randomNumberTwo];
+      
+    System.out.println("Your boring name was: " + names[i]);
+    
+    System.out.println("Your new stage name is: " + gangstaName);               
+   
+      
+      
+    }
+    
+    
+    
+    
+    
+    } 
+    
+    
+    
+    
+}
