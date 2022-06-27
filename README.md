@@ -1,11 +1,11 @@
 # StageNameCall
 Java project
 
-#java
+
 
 Design document
 
-Java project doen for my course. Logical ways to check what we’ve (supposed) to learn and know by this stage and trying to remember the rules. 
+Java project done for my course. Logical ways to check what we’ve (supposed) to learn and know by this stage and trying to remember the rules. 
 After hours of reading and (trying) understanding, I did my first attempt.
 package exercise;
 import java.util.Random;
