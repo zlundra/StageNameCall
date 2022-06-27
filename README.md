@@ -1,6 +1,8 @@
 # StageNameCall
 Java project
 
+#java
+
 Design document
 
 Java project doen for my course. Logical ways to check what we’ve (supposed) to learn and know by this stage and trying to remember the rules. 
